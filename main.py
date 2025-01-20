@@ -11,7 +11,7 @@ def run_discord_bot():
     INTENTS.message_content = True
     INTENTS.members = True
 
-    CURRENT_DIRECTORY = os.path.dirname(os.path.abspath(file))
+    CURRENT_DIRECTORY = os.path.dirname(os.path.abspath(__file__))
     TOKEN_FILE = open(CURRENT_DIRECTORY + "/token.txt")
     TOKEN = TOKEN_FILE.read()
     TOKEN_FILE.close()
